@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <section class="form">
+        <form action="">
+            <div class="form_group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Insert Name">
+            </div>
+           
+            <div class="form_group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Insert Username">
+            </div>
+
+            <div class="form_group">
+                <label for="age">Age</label>
+                <input type="number" id="age" placeholder="0" min="18" max="65">
+            </div>
+
+            <div class="form_group">
+                <label for="jobtitle">Job Title</label>
+                <select name="jobtitle" id="jobtitle">
+                    <option value="designer">Designer</option>
+                    <option value="frontenddeveloper">Front End Developer</option>
+                    <option value="backenddevolper">Back End Developer</option>
+                </select>
+            </div>
+
+        <button>Submit</button>
+        </form>
+    </section>
+</body>
+</html>
