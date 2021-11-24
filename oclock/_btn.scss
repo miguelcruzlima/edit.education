@@ -1,0 +1,26 @@
+.btn{
+    background: none;
+    border: none;
+    height: 20px;
+    width: 20px;
+}
+
+.btn-menu{
+    align-items: center;
+}
+
+.card-product{
+    .card-content{
+        .card-content--btn{
+            @include flex(center, nowrap, row);
+            height: 40px;
+            width: 200px;
+            border: none;
+            background-color: #2E4457;
+            font-family: $body-font;
+            color: white;
+            text-align: center;
+           align-items: center;
+        }
+    }
+}

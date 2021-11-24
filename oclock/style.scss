@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jockey+One&display=swap');
+@import "./mixin";
+@import "./fonts";
+@import "./btn";    
+
+
+.container-menu {
+    @include flex(space-between, nowrap, row);
+    align-items: center;
+    height: 60px;
+    background:white;
+    border-bottom: 1px solid black;
+    padding: 20px;
+}
+
+.container-filters{
+    @include flex(space-between, nowrap, row);
+    padding: 20px;
+    ol{
+        @include flex(left, nowrap, row);
+        li{
+            margin: 0 10px 0 0;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.card-galery{
+    @include flex(center, wrap, row);
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.card-product{
+    @include flex(center, wrap, column);
+    width: 200px;
+    margin: 10px;
+    border-bottom: 1px solid #808080;
+    a{
+        text-decoration: none;
+            &:hover{
+            background-color: #e9e9e9;
+            }
+    }
+    .card-img img{
+        width:100%;
+    }
+
+    .card-content{
+        @include flex(center, wrap, column);
+        text-align: center;
+    
+        .card-content--title{
+            margin:10px 0 0 0;
+         }
+         .card-content--subtitle{
+             margin: 0 0 10px 0;
+         }
+         .card-content--description{
+             margin: 10px 0 10px 0;
+         }
+         .card-content--price{
+             margin: 10px 0 10px 0;
+         }
+        .card-content--colors{
+            margin: 10px 0 10px 0;
+            @include flex(center, nowrap, row);
+            li{
+            height: 20px;
+            width: 20px;
+            border: 1px solid #808080;
+            margin-right: 10px;
+            }
+        }
+        .card-content--btn{
+            
+            margin: 20px auto;
+        }
+    }   
+}
+
+
+.card-product{
+    .card-product-suunto-9-peak{
+        @include flex(center, wrap, column);
+        width: 600px;
+        margin: 0 auto;
+        border-bottom: 1px solid #808080;
+    }
+}
