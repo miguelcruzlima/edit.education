@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+</head>
+
+<style>
+    nav {
+        background-color: pink;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        position: sticky;
+        top: 0;
+    }
+    .caixa{
+        padding: 1rem;
+    }
+   
+
+    main {
+        display: flex;
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .title {
+        background-color: aqua;
+        text-align: center;
+    }
+
+    .box {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin: 8px;
+    }
+
+    .thumbnail {
+        width: calc(100% / 5 - 16px);
+        height: 400px;
+        background-color: brown;
+        margin: 8px;
+    }
+
+    aside {
+        background-color: grey;
+        width: 12rem;
+        position: sticky;
+        height: calc(100vh - 48px);
+        top: 48px;
+    }
+
+    .link{
+        border: chartreuse solid 0.01rem;
+        padding: 1rem 0rem 1rem 1rem;
+    }
+</style>
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="caixa">About Us</div>
+        <div class="caixa">Contacts</div>
+        
+    </nav>
+
+    <main>
+        <aside>
+            <div class="link">
+                <h6>Link 1</h6>
+            </div>
+        </aside>
+
+        <div class="container">
+
+            <div class="title">
+                <h1>Products</h1>
+            </div>
+
+            <div class="box">
+                <div class="thumbnail thumbnail-0"></div>
+                <div class="thumbnail thumbnail-1"></div>
+                <div class="thumbnail thumbnail-2"></div>
+                <div class="thumbnail thumbnail-3"></div>
+                <div class="thumbnail thumbnail-4"></div>
+                <div class="thumbnail thumbnail-5"></div>
+                <div class="thumbnail thumbnail-6"></div>
+                <div class="thumbnail thumbnail-7"></div>
+                <div class="thumbnail thumbnail-8"></div>
+                <div class="thumbnail thumbnail-9"></div>
+                <div class="thumbnail thumbnail-10"></div>
+                <div class="thumbnail thumbnail-11"></div>
+                <div class="thumbnail thumbnail-12"></div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

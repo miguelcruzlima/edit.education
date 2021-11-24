@@ -1,0 +1,10 @@
+@import "./mixin";
+@import "./card";
+
+.card-galery{
+    @include flex(center, wrap, row);
+    margin: $margin-cards;
+
+}
+
+

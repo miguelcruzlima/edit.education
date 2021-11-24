@@ -1,0 +1,31 @@
+@import 'normalize';
+@import 'variables';
+@import 'utils';
+@import 'grid';
+
+.gridrow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .col{
+        box-sizing: border-box;
+        padding-left: $gridgutter / 2;
+        padding-right: $gridgutter / 2;
+        flex: 1;
+    }
+
+        .offset#{$i} {
+
+@for $i from 1 through $gridcolumns{
+    .col-#{$i} {
+        box-sizing: border-box;
+        width: percentage($i/$gridcolumns);
+        padding-left: $gridgutter / 2;
+        padding-right: $gridgutter / 2;
+        }
+        margin-left: percentage($i/$gridcolumns);
+        }
+}
+
+}

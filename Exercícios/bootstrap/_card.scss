@@ -1,0 +1,11 @@
+$margin-cards: 10px;
+
+.card-galery{
+    .card{
+        margin: $margin-cards;
+        &:hover{
+            background-color: grey;
+
+        }
+    }
+}
