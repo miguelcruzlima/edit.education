@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;800&display=swap');
+
+$logo-font: 'Jockey One';
+$font-size: 16px;
+$body-font: 'Inter', sans-serif;
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+h5, h4, p{
+    margin: 0;
+    padding: 0;
+}
+
+.container-menu{
+    .logo{
+        font-family: $logo-font;
+        font-size: 40px;
+        color: black    ;
+    }
+}
+
+.container-filters{
+    ol{
+        li{
+            a{
+                font-family: $body-font;
+                @include font(300, none, 14px, black);
+            }
+        }
+    }
+}
+
+.card-product{
+    .card-content{
+        .card-content--title{
+           @include font(800, none, 22px, black);
+        }
+        .card-content--subtitle{
+            @include font(500, italic, 20px, black);
+            padding: 0;
+        }
+        .card-content--description{
+            @include font(300, none, 14px, black);
+            padding: 10px 0 10px 0;
+        }
+.card-content--price{
+    @include font(500, none, 20px, #808080)
+}
+    }
+}
+
